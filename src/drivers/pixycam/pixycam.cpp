@@ -66,7 +66,9 @@ int pixycam_main(int argc, char *argv[])
 		pixy.version->print();
 		usleep(1000);
 
-		while (1) {
+		int counter = 100;
+		// Do the getBlocks a limited number of times
+		for (int i = 1; i <= counter; i++) {
 
 			int i;
 			// grab blocks!
@@ -87,6 +89,7 @@ int pixycam_main(int argc, char *argv[])
 			}
 
 			usleep(500);
+
 		}
 	}
 
