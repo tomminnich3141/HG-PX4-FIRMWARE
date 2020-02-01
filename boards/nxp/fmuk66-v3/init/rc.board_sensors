@@ -8,7 +8,9 @@
 hmc5883 -C -X start
 
 # Possible external compasses
-ist8310 -C -b 2 start
+#twm - 01172020 - why look on bus 2 , we know it is on bus 1
+#ist8310 -C -b 2 start
+ist8310 -C -b 1 start
 
 # External I2C bus
 lis3mdl -X start
