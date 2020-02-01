@@ -36,9 +36,11 @@ px4_add_board(
 		lights/oreoled
 		lights/rgbled
 		lights/rgbled_pwm
+		lights/rgbled_ncp5623c #twm - 01072020  - added this because the command was not found
 		magnetometer # all available magnetometer drivers
 		mkblctrl
 		pca9685
+		pixycam #twm - 01182020 - pixycam demo code
 		#pwm_input # NOT Portable YET drivers
 		pwm_out_sim
 		px4flow
@@ -47,6 +49,7 @@ px4_add_board(
 		tap_esc
 		telemetry # all available telemetry drivers
 		#test_ppm # NOT Portable YET
+		tone_alarm
 
 	MODULES
 		attitude_estimator_q
@@ -68,7 +71,6 @@ px4_add_board(
 		mc_att_control
 		mc_pos_control
 		navigator
-		position_estimator_inav
 		sensors
 		vmount
 		vtol_att_control
@@ -104,14 +106,14 @@ px4_add_board(
 		bottle_drop # OBC challenge
 		fixedwing_control # Tutorial code from https://px4.io/dev/example_fixedwing_control
 		hello
+		hg_mlx90614 # ThermoCam example from HoverGames forked from NXPHoverGames/Thermocam
 		hwtest # Hardware test
 		#matlab_csv_serial
-		#publisher
+		position_estimator_inav
 		px4_mavlink_debug # Tutorial code from https://px4.io/dev/debug_values
 		px4_simple_app # Tutorial code from https://px4.io/dev/px4_simple_app
 		rover_steering_control # Rover example app
 		segway
-		#subscriber
 		uuv_example_app
 
 	)
